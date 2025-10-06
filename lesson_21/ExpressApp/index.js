@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const cors = require('cors');
 
-app.use(express.urlencoded({ extended: true }))
+app.use(express.static({ extended: true }))
 app.use(express.json());
 app.use(cors()); // Enable CORS for all routes
 app.use((req, res, next) => {
